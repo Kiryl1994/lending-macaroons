@@ -51,9 +51,9 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="phone">
+                <a class="phone" href="tel: +375 (29) 368-98-68">
                     +375 (29) 368-98-68
-                </div>
+                </a>
             </div>
             </div>
             </header>
@@ -81,9 +81,9 @@
         <div class="container">
             <div class="information__main">
                 <div class="information__title">
-                    <div class="information__title-main">
+                    <h2>
                         Мы печём для вас вкуснейшие макаруны уже более 10 лет
-                    </div>
+                    </h2>
                     <div class="information__text">
                         Все пироженки мы готовим только из натуральных и качественных продуктов, без консервантов, ароматизаторов, красителей.
                         Используем в приготовлении сливочное масло 82,5%, без дрожжей, маргарина, разрыхлителей и улучшителей муки.
@@ -137,7 +137,7 @@
 
     <section class="products">
         <div class="container">
-            <div class="product__main">Выберите свой макарун</div>
+            <h2>Выберите свой макарун</h2>
             <div class="products__name">
                 <div class="product__description">
                     <div class="product__image">
@@ -210,28 +210,30 @@
                     </div>
                 </div>
                 <div class="order__main">
-                    <div class="order__title">
+                    <h2>
                         Закажите макарун!
-                    </div>
+                    </h2>
                     <div class="order__title-text">
                         Выберите понравившийся макарун, заполните форму и ожидайте звонка нашего пекаря!
                     </div>
-                    <div class="order__text-one">
-                        Ваш выбор
-                    </div>
-                    <div class="main__input-one">
-                        <input type="text" placeholder="Напишите, что хотите заказать...">
-                    </div>
-                    <div class="order__text-two">
-                        Заполните данные для заказа
-                    </div>
-                    <div class="main__input-two">
-                        <input type="text" placeholder="Ваше имя">
-                    </div>
-                    <div class="main__input-two">
-                        <input type="number" placeholder="+375__-___-__-__">
-                    </div>
-                    <button class="btn btn__two">Оформить заказ</button>
+                    <form action="/submit" method="post">
+                        <div class="order__text-one">
+                            Ваш выбор
+                        </div>
+                        <label for="text" class="main__input-one">
+                            <input type="text" id="text" placeholder="Напишите, что хотите заказать...">
+                        </label>
+                        <div class="order__text-two">
+                            Заполните данные для заказа
+                        </div>
+                        <label for="name" class="main__input-two">
+                            <input type="text" id="name" placeholder="Ваше имя">
+                        </label>
+                        <label for="tel" class="main__input-two">
+                            <input type="text" id="tel" placeholder="+375__-___-__-__">
+                        </label>
+                        <button class="btn btn__two">Оформить заказ</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -246,7 +248,7 @@
                     <div class="footer__image">
                         <a href="#"><img src="images/instagram.png" alt="instagram"></a>
                     </div>
-                    <div class="number">+375 (29) 368-98-68</div>
+                    <a class="number" href="tel: +375 (29) 368-98-68">+375 (29) 368-98-68</a>
                     <div class="footer__rights">
                         Все права защищены, 2020
                     </div>
