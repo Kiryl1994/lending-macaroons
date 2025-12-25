@@ -49,11 +49,6 @@
     padding: 38px 0 30px 0;
 }
 
-.menu {
-    padding-left: 226px;
-    padding-right: 310px;
-}
-
 .menu ul {
     display: flex;
     justify-content: space-between;
@@ -82,6 +77,7 @@
     font-size: 16px;
     font-family: "GilroyBold", sans-serif;
     color: rgb(255, 255, 255); 
+    text-decoration: none;
 }
 
 
@@ -178,7 +174,7 @@
     padding: 119px 0 24px 0;
 }
 
-.information__title-main {
+.information__title h2 {
     font-size: 45px;
     font-family: "Tavolga", sans-serif;
     color: rgb(51, 25, 7);
@@ -221,7 +217,6 @@
 
 .information__description:hover .information__ellipse {
     background-color: rgb(235, 168, 177);
-    border: 1px solid rgb(130, 19, 40);
 }
 
 .information__description:hover span {
@@ -234,7 +229,7 @@
     color: rgb(255, 255, 255);
     display: block;
     margin: auto;
-    padding-top: 10px;
+    padding-top: 12px;
     transition: .5s;
 }
 
@@ -258,7 +253,7 @@
     background-color: rgb(235, 168, 177);
 }
 
-.product__main {
+.products h2 {
     font-size: 45px;
     font-family: "Tavolga", sans-serif;
     color: rgb(255, 255, 255);
@@ -353,7 +348,7 @@
    padding-left: 79px;
 }
 
-.order__title {
+.order__main h2 {
     font-size: 45px;
     font-family: "Tavolga", sans-serif;
     color: rgb(51, 25, 7);
@@ -372,12 +367,14 @@
     font-size: 18px;
     font-family: "GilroyBold", sans-serif;
     color: rgb(18, 10, 6);
-    padding-top: 48px;
+    margin-top: 48px;
+    margin-bottom: 20px;
 }
 
 .main__input-one {
     padding-top: 20px;
     padding-bottom: 40px;
+    
 }
 
 .main__input-one input {
@@ -385,6 +382,8 @@
     border-radius: 30px;
     width: 293px;
     height: 59px;
+    background: rgb(255, 239, 239);
+    padding-left: 26px;
 }
 
 .main__input-one input::placeholder {
@@ -392,7 +391,6 @@
     font-family: "GilroyBold", sans-serif;
     color: rgb(118, 12, 34);
     font-weight: bold;
-    padding: 22px 0 24px 26px;
 }
 
 .main__input-one input:focus {
@@ -404,11 +402,12 @@
     font-size: 18px;
     font-family: "GilroyBold", sans-serif;
     color: rgb(18, 10, 6);
-    padding-bottom: 22px;
+    margin-top: 40px;
+    margin-bottom: 7px;
 }
 
 .main__input-two {
-    padding-bottom: 15px;
+    margin-top: 15px;
 }
 
 .main__input-two input {
@@ -418,6 +417,9 @@
     border-radius: 30px;
     width: 293px;
     height: 59px;
+    padding-left: 26px;
+    background: rgb(255, 239, 239);
+    margin-top: 15px;
 }
 
 .main__input-two input:focus {
@@ -430,12 +432,12 @@
     font-family: "GilroyBold", sans-serif;
     color: rgb(118, 12, 34);
     font-weight: bold;
-    padding: 22px 0 24px 26px;
 }
 
 .btn__two {
-    width: 295px;
+    width: 321px;
     height: 61px;
+    margin-top: 15px;
 }
 
 .transition__one {
@@ -517,6 +519,7 @@
     color: rgb(255, 255, 255);
     padding-top: 95px;
     text-align: end;
+    text-decoration: none;
 }
 
 .footer__rights {
@@ -569,7 +572,8 @@
 .arrow-container::after {
     content: '';
     position: absolute;
-    top: 2px;
+    top: 3px;
+    left: -1px;
     width: 0;
     height: 0;
     border-style: solid;
@@ -593,6 +597,7 @@
     font-size: 15px;
     font-family: "GilroyMedium", sans-serif;
     color: rgb(119, 10, 29);
+    line-height: 1.7;
     text-align: center;
     transform: translateY(200px);
     opacity: 0;
